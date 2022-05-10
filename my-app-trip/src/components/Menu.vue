@@ -5,7 +5,7 @@
         <div class="nav-brand">
           <img src="https://img.icons8.com/wired/2x/bbb.png" width="50" />
         </div>
-        <div>
+        <div class="navbar">
           <button
             class="navbar-toggler"
             data-bs-toggle="collapse"

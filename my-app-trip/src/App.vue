@@ -1,14 +1,18 @@
 <template>
   <nav>
-    <Menu/>
+    <diV>
+      <Menu/>
+    </diV>
+    <Footer/>
   </nav>
 </template>
 
 <script>
 import Menu from "./components/Menu.vue";
+import Footer from "./components/Footer.vue";
 export default {
     name: "app",
-    components: { Menu,}
+    components: { Menu, Footer }
 }
 </script>
 

@@ -1,13 +1,22 @@
 <template>
-  <h1>About</h1>
+  <div class="about">
+     <h1>About</h1>
+  </div>
 </template>
 
 <script>
+
 export default {
-    name: 'aboutVue'
+    name: 'aboutVue',
+    component: {
+      
+    }
 }
 </script>
 
-<style>
-
+<style scoped>
+.about{
+  height: 100vh;
+}
 </style>
+
