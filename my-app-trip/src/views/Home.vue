@@ -1,20 +1,22 @@
 <template>
   <div>
-      <div>
-          <img :src="image[0]" alt="" class="banner">
-          <p class="text-img">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia perferendis laudantium dolorem cupiditate quidem odio earum, quas facere accusamus quisquam id possimus asperiores consectetur qui harum quis placeat. Explicabo tempora aut dignissimos obcaecati officia doloribus voluptates ab molestiae distinctio maiores dolorem earum dolores nemo delectus iste, repellendus cumque beatae quod!</p>
+      <div class="w-100">
+          <img :src="image[0]" alt="" class="banner w-100">
+          <div class="row">
+              <p class="text-img col-sm col-md  w-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia perferendis laudantium dolorem cupiditate quidem odio earum, quas facere accusamus quisquam id possimus asperiores consectetur qui harum quis placeat. Explicabo tempora aut dignissimos obcaecati officia doloribus voluptates ab molestiae distinctio maiores dolorem earum dolores nemo delectus iste, repellendus cumque beatae quod!</p>
+          </div>
       </div>
-      <div class="group-card">
-          <div class="card">
+      <div class="group-card row ">
+          <div class="card col-sm-12 col-md-6 col-lg text-center">
               <div>
                   <img :src="image[1]" alt="">
               </div>
               <div>
                   <h1>Airplane</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam dolore magnam voluptatibus atque provident quisquam sunt? Alias similique saepe officia magnam neque. Distinctio minima quos voluptate odio ad excepturi fugiat asperiores sequi dolores blanditiis voluptatibus neque aut, autem esse ipsum mollitia accusamus! Ullam, quasi! Aperiam soluta deleniti numquam dolorem!</p>
+                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam dolore magnam voluptatibus atque provident quisquam sunt? Alias similique saepe officia magnam neque. Distinctio minima quos voluptate odio ad excepturi fugiat asperiores sequi dolores blanditiis voluptatibus neque aut, autem esse ipsum mollitia accusamus! Ullam, quasi! Aperiam soluta deleniti numquam dolorem!</p>
               </div>
           </div>
-          <div class="card">
+          <div class="card col-sm-12 col-md-6 col-lg text-center">
               <div>
                   <img :src="image[1]" alt="">
               </div>
@@ -23,7 +25,7 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam dolore magnam voluptatibus atque provident quisquam sunt? Alias similique saepe officia magnam neque. Distinctio minima quos voluptate odio ad excepturi fugiat asperiores sequi dolores blanditiis voluptatibus neque aut, autem esse ipsum mollitia accusamus! Ullam, quasi! Aperiam soluta deleniti numquam dolorem!</p>
               </div>
           </div>
-          <div class="card">
+          <div class="card col-sm-12 col-md-6 col-lg text-center">
               <div>
                   <img :src="image[1]" alt="">
               </div>
@@ -56,13 +58,14 @@ export default {
 }
 .text-img{
     position: absolute;
-    width: 600px;
-    top: 250px;
-    left: 40%;
+    top: 30%;
+    left: 20%;
+    text-align: center;
     transition: calc(-50%,-50%);
     z-index: 9;
     color:#eee;
     font-family: inherit;
+    margin: auto;
 }
 .group-card{
   display: flex;
