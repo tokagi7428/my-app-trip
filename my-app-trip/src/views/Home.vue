@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="w-100">
-      <img :src="image[0]" alt="" class="banner w-100" />
+    <div class="banner">
+      <img :src="image[0]" alt="" class="home-banner" />
       <div class="row">
-        <div class="text-img col-sm col-md col-lg w-75">
+        <div class="home-text">
           <h1>Lorem ipsum dolor.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
@@ -87,28 +87,30 @@ export default {
 
 <style scoped>
 .banner {
+  position: relative;
+  text-align: center;
+  color: #000;
+}
+.home-banner{
   width: 100%;
   height: 500px;
-  z-index: 1;
 }
-.text-img {
+.home-text {
   position: absolute;
-  top: 20%;
-  left: 15%;
-  text-align: center;
-  transition: calc(-50%, -50%);
-  z-index: 9;
-  color: #eee;
-  font-family: inherit;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
 }
 .group-card {
   display: flex;
-  max-width: 960px;
+  max-width: 1280px;
   margin: 30px auto;
+  position: relative;
 }
 .card {
-  width: 300px;
+  position: relative;
+  width: 400px;
   margin: 20px;
   border: none;
 }
